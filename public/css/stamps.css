@@ -1,0 +1,225 @@
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+.header-logo{
+  margin-left: 30px;
+  font-size: 22px;
+}
+.header-list ul{
+  display: flex;
+}
+.header-list li {
+  list-style: none;
+  margin-right: 40px;
+}
+.btn{
+  background: none; 
+  border: none; 
+  color: black;  
+  font-size: 16px;
+  margin-right: 15px;
+}
+.btn:hover{
+  background-color: rgb(195, 195, 195);
+
+}
+
+main{
+  width: 100%;
+  height: 560px;
+  background-color: rgb(229, 229, 229);
+}
+.main-top-comment{
+  padding-bottom: 30px;
+}
+.main-content{
+  width: 50%;
+  text-align: center;
+}
+.stamp-card{
+  width: 380px;
+  height: 200px;
+  background-color: azure;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  border: solid 1px white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.stamp-card:hover{
+  background-color: rgb(191, 191, 191);
+
+}
+.stamp-topcard{
+  display: flex;
+  justify-content: center;
+}
+.stamp-undercard{
+  display: flex;
+  justify-content: center;
+}
+.stamp-card p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+footer{
+  height: 24px;
+}
+.footer-ctt{
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.top-pagination{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.pagination-text{
+  width: 120px;
+  position: relative;
+}
+.pagination-day{
+  font-weight: bold;
+  font-size: 18px;
+}
+.top-pagination p {
+  width: 100%;
+  position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nextbtn{
+  width: 25px;
+  height: 20px;
+  background-color: aliceblue;
+  color: rgb(20, 90, 255);
+  border: rgb(20, 90, 255) solid 1px;
+  margin-left: 10px;
+}
+.beforebtn{
+  width: 25px;
+  height: 20px;
+  background-color: aliceblue;
+  color: rgb(20, 90, 255);
+  border:rgb(20, 90, 255) solid 1px;
+  margin-right: 10px;
+}
+.main-content{
+  width: 100%;
+  padding-top:40px;
+}
+.table-content{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-collapse: collapse; /* セルの間の余白を除去する */
+}
+.table-clm{
+  padding: 20px;
+  width: 20%;
+  text-align: left; /* 左寄せにする */
+  border-top: 1px solid black; /* 行の上に1pxの黒い線を引く */
+}
+.table-row{
+  padding: 20px;
+  width: 20%;
+  text-align: left;/* 左寄せにする */
+  border-top: 1px solid black; /* 行の上に1pxの黒い線を引く */
+}
+.pagination{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.pagination a {
+  text-decoration: none;
+}
+.pagination-list{
+  display: flex;
+  list-style: none;
+}
+.pagelist{
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  color: rgb(30, 117, 198);
+  list-style: none;
+  margin: 1px;
+}
+.pageitem{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*ログイン画面*/
+.login-btn{
+  width: 320px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.login-card{
+  text-align: center;
+}
+.input-box{
+  width: 320px;
+}
+
+.text-blue{
+  color: rgba(29, 29, 255, 0.976);
+}
+.text-blue:hover{
+  color: rgb(96, 96, 246);
+}
+.background-blue{
+  background-color: rgba(29, 29, 255, 0.976);
+}
+.background-blue:hover {
+  background-color: rgb(96, 96, 246);
+}
+
+/*ユーザ一覧*/
+.table-content-userlist{
+    width: 40%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* セルの間の余白を除去する */
+}
+
+.main-userlist{
+  padding-top: 100px;
+}
+
+.table-clm-id{
+  padding: 20px;
+  width: 10%;
+  text-align: left;
+  /* 左寄せにする */
+  border-top: 1px solid black;
+  /* 行の上に1pxの黒い線を引く */
+}
+.table-row-id{
+  padding: 20px;
+  width: 20px;
+  text-align: left;
+  /* 左寄せにする */
+  border-top: 1px solid black;
+  /* 行の上に1pxの黒い線を引く */
+}
