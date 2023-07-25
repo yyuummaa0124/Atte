@@ -23,13 +23,17 @@ class StampController extends Controller
                 //existsは条件に当てはまる場合trueが返却され、当てはまらない場合falseが返却される　
                 ->exists();
 
+        $endtimeRecord = Stamp::where('user_id', $user->id)
+                ->whereDate('created_at', Carbon::today())
+                ->first();
+
         //ユーザーIDがログインユーザのIDと一致するかつ、作成日が本日のレコードがある場合、作成日を降順にソートして最初のレコードを取得
         $restRecord = Rest::where('date_id', $user->id)
                     ->whereDate('created_at', Carbon::today())
                     ->latest('created_at')
                     ->first();
 
-        return view('stamps', ['user' => $user, 'exists' => $exists, 'restRecord' => $restRecord]);
+        return view('stamps', ['user' => $user, 'exists' => $exists, 'restRecord' => $restRecord, 'endtimeRecord' => $endtimeRecord]);
     }
 
     public function startwork(Request $request)

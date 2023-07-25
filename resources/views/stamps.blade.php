@@ -12,7 +12,7 @@
 
       <form action="{{route('posts.endwork')}}" method="POST">
           @csrf
-          <button class="stamp-card" type="submit">勤務終了</button>
+          <button class="stamp-card" type="submit" @if(!$exists || $endtimeRecord->end_time) disabled  @endif>勤務終了</button>
         </div>
       </form>
 

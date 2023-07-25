@@ -54,8 +54,11 @@ main{
 }
 .stamp-card:hover{
   background-color: rgb(191, 191, 191);
-
 }
+ /* trueの場合にhoverを無効にする */
+.stamp-card[disabled="true"]:hover {
+  background-color:white
+  }
 .stamp-topcard{
   display: flex;
   justify-content: center;
