@@ -1,5 +1,7 @@
 @extends('layouts.layout')
-
+@php
+    use Carbon\Carbon;
+@endphp
 
 @section('content')
     <div class="main-content">   
@@ -28,6 +30,7 @@
             <table class="table-content">  
                 <tr>
                     <th class="table-clm">名前</th>
+                    <th class="table-clm">日付</th>
                     <th class="table-clm">勤務開始</th>
                     <th class="table-clm">勤務終了</th>
                     <th class="table-clm">休憩時間</th>
@@ -37,6 +40,7 @@
                     @foreach ($stampdatas as $stampdata)
                         <tr>
                             <td class="table-row">{{$stampdata->user->name}}</td>
+                            <td class="table-row">{{ Carbon::parse($stampdata->created_at)->format('Y-m-d') }}</td>
                             <td class="table-row">{{$stampdata -> start_time}}</td>
                             <td class="table-row">{{$stampdata -> end_time}}</td>
                             <td class="table-row">{{$stampdata -> total_rest}}</td>
